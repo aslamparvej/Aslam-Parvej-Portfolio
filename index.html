@@ -1,29 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Aslam Parvej's portfolio showcasing projects, skills, and experience in web development and programming.">
-    <meta name="keywords" content="Aslam Parvej, portfolio, web development, programming, projects, skills, experience">
-    <meta name="author" content="Aslam Parvej">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
+    <meta
+      name="description"
+      content="Aslam Parvej's portfolio showcasing projects, skills, and experience in web development and programming."
+    />
+    <meta
+      name="keywords"
+      content="Aslam Parvej, portfolio, web development, programming, projects, skills, experience"
+    />
+    <meta name="author" content="Aslam Parvej" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
 
     <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Aslam Parvej | Portfolio</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!-- Background Lines -->
+    <div class="background-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <div class="logo">&lt;AP /&gt;</div>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav nav-links">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container h-100">
+          <div class="hero-content-wrapper h-100">
+            <div class="hero-content flex-grow-1 position-relative">
+              <div class="hero-content__name-wrapper">
+                <h2>Aslam Parvej</h2>
+                <div class="hero-content__name-wrapper-line top"></div>
+                <div class="hero-content__name-wrapper-line right"></div>
+                <div class="hero-content__name-wrapper-line bottom"></div>
+                <div class="hero-content__name-wrapper-line left"></div>
+              </div>
+              <div class="hero-content__role-wrapper">
+                <h3>Software Engineer | Frontend Developer</h3>
+              </div>
+              <div class="hero-content__description">
+                <p>
+                  I'm a passionate software engineer with a focus on creating
+                  exceptional user experiences through clean, efficient code.
+                </p>
+              </div>
+              <div class="action-btn-container">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-outline-primary">View Projects</a>
+              </div>
+
+              <div class="award-container-wrapper">
+                <div class="award-container">
+                  <i class="bi bi-award-fill"></i>
+                  <h3>CSS Developer of the Day</h3>
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual flex-grow-1 w-50">
+              <div class="code-window">
+                <div class="window-header">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+
+                <div class="code-content">
+                  <div class="code-line">
+                    <span class="keyword">const</span> developer = {
+                  </div>
+                  <div class="code-line">
+                    <span class="function">name</span>:
+                    <span class="string">'Aslam Parvej'</span>,
+                  </div>
+                  <div class="code-line">
+                    <span class="function">role</span>:
+                    <span class="string">'Software Engineer'</span>,
+                  </div>
+                  <div class="code-line">
+                    <span class="function">experience</span>:
+                    <span class="string">'2.5 years'</span>,
+                  </div>
+                  <div class="code-line">
+                    <span class="function">passion</span>:
+                    <span class="string">'Building great products'</span>
+                  </div>
+                  <div class="code-line">};</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <h3 class="section-title">About Me</h3>
+
+          <div class="about-content">
+            <div class="about-image">
+              <img src="./assets/images/portfolio.jpeg" alt="Aslam Parvej" />
+            </div>
+            <div class="about-text">
+              <p>
+                I am a Software Engineer with 3+ years of experience in building
+                scalable, user-centric <strong>web applications</strong>, with a
+                strong focus on <strong>JavaScript</strong> and modern
+                <strong>frontend development</strong>. I specialize in creating
+                clean, maintainable, and high-performance UIs using
+                <strong>React.js</strong> and core web technologies.
+              </p>
+              <p>
+                In my professional experience, I have worked extensively with
+                <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>,
+                <strong>JavaScript</strong>, <strong>jQuery</strong> and
+                <strong>React.js</strong>, delivering production-level features
+                and improving application usability. Alongside this, I have been
+                actively upskilling in the <strong>MERN stack</strong>, building
+                real-world projects to gain hands-on experience in full-stack
+                development.
+              </p>
+              <p>
+                I have developed and deployed projects like Dev Center
+                (AI-powered blogging platform), where I worked on
+                <strong>API integration</strong>,
+                <strong>dynamic content generation</strong>, and
+                <strong>system design</strong>
+                thinking. These projects reflect my ability to solve real-world
+                problems, write scalable code, and quickly adapt to new
+                technologies.
+              </p>
+              <p>
+                I have a strong interest in Data
+                <strong>Structures & Algorithms</strong>,
+                <strong>system design</strong> fundamentals, and
+                <strong>performance optimization</strong>, and I continuously
+                practice to improve my problem-solving skills—preparing myself
+                for high-impact engineering roles in product-based companies.
+              </p>
+              <p>
+                I am looking for an opportunity as a
+                <strong>Software Development Engineer (SDE)</strong> or
+                <strong>Frontend Developer / React.js Developer</strong> where I
+                can contribute to building scalable products, work on
+                challenging problems, and grow alongside a high-performing
+                engineering team.
+              </p>
+            </div>
+          </div>
+
+          <!-- About Stats  -->
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Learning Mindset</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skils Section -->
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <h3 class="section-title">Technical Expertise</h3>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <h3 class="section-title">Projects</h3>
+        </div>
+      </section>
+
+      <!-- contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h3 class="section-title">Get In Touch</h3>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container" data-aos="fade-up">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Aslam Parvej</h4>
+            <p>
+              Building scalable web and mobile applications with modern
+              technologies. Specialized in MERN stack, React Native, and AI
+              integration with 2.5 years of hands-on experience.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-envelope"></i></a>
+              <a href="https://github.com/aslamparvej" title="GitHub"
+                ><i class="bi-brands bi-github"></i
+              ></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>
+                <i class="bi bi-envelope me-2"></i>
+                aslamparvej2@gmail.com
+              </li>
+              <li><i class="bi bi-phone me-2"></i> +91 9647190348</li>
+              <li>
+                <i class="bi bi-geo-alt me-2"></i>
+                Newtown, Kolkata - 700135
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Aslam Parvej. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Btn :: Begins -->
+    <div class="floating-contact">
+      <div class="contact-container">
+        <div class="contact-options">
+          <a
+            href="https://wa.me/+9647190348"
+            class="contact-btn whatsapp-btn"
+            target="_blank"
+          >
+            <i class="bi bi-whatsapp"></i>
+            <span class="tooltip">WhatsApp</span>
+          </a>
+          <a href="tel:+9647190348" class="contact-btn call-btn">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="tooltip">Call</span>
+          </a>
+        </div>
+        <button class="main-contact-btn">
+          <i class="bi bi-chat-dots-fill"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Floating Action Btn :: Ends -->
 
     <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/scripts.js"></script>
-</body>
+  </body>
 </html>
