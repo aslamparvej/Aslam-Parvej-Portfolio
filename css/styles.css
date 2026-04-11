@@ -396,6 +396,10 @@ header nav.navbar {
     background-color: var(--secondary-color);
 }
 
+.min-h-unset {
+    min-height: unset !important;
+}
+
 /* About Common CSS :: Ends */
 
 /* About Section CSS :: Begins */
@@ -458,6 +462,133 @@ header nav.navbar {
 
 
 /* About Section CSS :: Ends */
+
+/* Experience Section CSS :: Begins */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.experience-card-item {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--primary-color-light);
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    transition: all 0.3s;
+    display: flex;
+    gap: 2rem;
+}
+
+.experience-card-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow-alt);
+}
+
+.experience-number {
+    color: var(--primary-color);
+    font-size: var(--text-4xl);
+    font-weight: 600;
+    opacity: 0.35;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    user-select: none;
+    padding-top: 4px;
+}
+
+.experience-card-right {
+    flex: 1;
+}
+
+.experience-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.experience-card__company {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin-bottom: 2px;
+}
+
+.experience-card__role {
+    color: var(--color-text-primary);
+    font-size: var(--text-2xl);
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+    line-height: 1.2;
+}
+
+.experience-card__duration {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: var(--color-bg);
+    border: 0.5px solid var(--primary-color);
+    padding: 4px 10px;
+    border-radius: var(--radius-lg);
+    white-space: nowrap;
+}
+
+.experience-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block: var(--space-4);
+}
+
+.experience-bul {
+    display: flex;
+    gap: 10px;
+    align-items: baseline
+}
+
+.experience-bul-dash {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    opacity: 0.3;
+    flex-shrink: 0
+}
+
+.experience-bul-text {
+    font-size: var(--text-sm);
+    font-weight: 300;
+    color: var(--color-text-secondary);
+    line-height: 1.6
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2)
+}
+
+.experience-tag {
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: var(--space-1) var(--space-2);
+    border-radius: 4px;
+    border: 0.5px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background: transparent;
+    text-transform: uppercase
+}
+
+
+/* Experience Section CSS :: Ends */
 
 /* Skills Section CSS :: Begins */
 .skills-section {}
@@ -725,6 +856,30 @@ header nav.navbar {
         margin-top: var(--space-8);
     }
 
+    .experience-content {
+        width: 90%;
+        padding-top: var(--space-8);
+    }
+
+    .experience-card-item {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    .experience-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: var(--space-4);
+    }
+
+    .experience-card-left {
+        text-align: end;
+    }
+
+    .experience-number {
+        writing-mode: horizontal-tb;
+    }
+
     .floating-contact {
         bottom: 20px;
         right: 20px;
@@ -741,4 +896,5 @@ header nav.navbar {
         height: 55px;
         font-size: 1.3rem;
     }
+
 }
