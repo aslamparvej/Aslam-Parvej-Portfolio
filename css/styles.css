@@ -591,8 +591,58 @@ header nav.navbar {
 /* Experience Section CSS :: Ends */
 
 /* Skills Section CSS :: Begins */
-.skills-section {}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 2rem;
+    padding-top: 6rem;
+}
 
+.skill-card {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    transition: all 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-glow-alt);
+}
+
+.skill-icon {
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.4rem 1rem;
+    /* background: rgba(255, 217, 0, 0.1); */
+    background-color: transparent;
+    border: 1px solid rgba(255, 217, 0, 0.3);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+}
 /* Skills Section CSS :: Ends */
 
 /* Footer Section CSS :: Begins */
@@ -878,6 +928,12 @@ header nav.navbar {
 
     .experience-number {
         writing-mode: horizontal-tb;
+    }
+
+    .skills-grid {
+        width: 90%;
+        padding-top: var(--space-8);
+        margin: 0 auto;
     }
 
     .floating-contact {
